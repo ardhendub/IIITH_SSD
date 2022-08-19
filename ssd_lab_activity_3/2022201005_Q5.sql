@@ -1,0 +1,1 @@
+select a.Essn,b.Dnumber,a.count from(select Essn,count(*) as count from DEPENDENT where Essn in (select Mgr_ssn from DEPARTMENT where Dnumber in (select Dnumber from DEPT_LOCATIONS group by Dnumber having count(*)>=2)) group by Essn) as a,DEPARTMENT as b where a.Essn=Mgr_ssn;
