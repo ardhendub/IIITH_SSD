@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Students Records</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script>
+            function func1(){
+                var roll=document.getElementById("Roll").value;
+                var name=document.getElementById("Name").value;
+                
+                var table=document.getElementById("table1");
+                if(roll==""||name==""){
+                    exit;
+                }
+                var row=table.insertRow(-1);
+                var addR=row.insertCell(0);
+                addR.innerText=roll;
+
+                addr=row.insertCell(1);
+                addr.innerText=name;
+                document.getElementById("Roll").value="";
+                document.getElementById("Name").value="";
+                // document.write(roll);
+
+                // alert(roll+name);
+            }
+            function del(){
+                var a=document.getElementById("table1");
+                a.deleteRow(-1);
+            }
+        </script>
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>Students Records</h1>
+        <div class="qwe">
+        <!-- <form> -->
+            <table align="center">
+                <tr id="tab1">
+                    <td><input id="Roll" placeholder="Roll" type="text" class="a1"></td>
+                    <td><input id="Name" placeholder="Name" type="text" class="a1"></td>
+                    <td><input id="button1" type="button" onclick="func1()" value="Add New"></td>
+                </tr>
+            </table>
+            <table id="table1" align="center" border="5">
+                <tr>
+                    <th>Roll</th><th>Name</th>
+                </tr>
+            </table>
+            <br><br><br>
+            <center>
+            <table id="tab3" align="center">
+                <input id="button2" type="button" onClick="del()" value="Delete Last Entry">
+            </table></center>
+        <!-- </form> -->
+    </div>
+    </body>
+</html>

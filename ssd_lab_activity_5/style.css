@@ -1,0 +1,71 @@
+body, html {
+    height: 100%;
+    width: 100%;
+  }
+body {
+    /* background-color: powderblue; */
+    /* background-image: linear-gradient(powderblue 50%,white 500%); */
+    background: linear-gradient(180deg, rgba(143,220,244,1) 16%, rgba(255,255,255,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h1 {
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+  }
+  p {
+    color: red;
+  }
+  
+  .abc{
+    background-color: white;
+    font-size: 20px;
+    width: 30%;
+    text-align: center;
+    margin: auto;
+    vertical-align: auto;
+    box-shadow: 7px 10px lightgray;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  #sub{
+    font-size: 20px;
+    background-color: rgb(93, 163, 248);
+  }
+  .qwe{
+    width: 30%;
+    margin: auto;
+  }
+  #tab1{
+    padding: 20%;
+  }
+  #button1{
+    color: white;
+    background-color: rgb(28, 235, 63);
+  }
+  #button2{
+    color: white;
+    background-color: crimson;
+    margin: auto;
+  }
+  .ho:hover{
+    color: yellow;
+    border-color: green;
+  }
+th{
+    background-color: darkorange;
+}
+
+table#table1 tbody tr:nth-child(odd){
+    background-color: rgb(245, 178, 178);
+}
+
+table#table1 tbody tr:nth-child(even){
+    background-color: rgb(244, 244, 124);
+}
+table{
+    padding: 10px;
+    /* border: 5px; */
+    border-color: blue;
+}
