@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Team Form
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="myScript.js"></script>
+    </head>
+    <body id="bod">
+        <center><h1 id="ele1">Team Form</h1></center>
+        <table cellpadding="15">
+            <tr>
+                <td id="ele8">
+                    Manager Name:
+                </td>
+                <td>
+                    <input type="text" id="manager" size="15">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="ele2">
+                    Group Mail:
+                </td>
+                <td>
+                    <input type="text" id="mail" size="15" onblur="myFunction1()">
+                </td>
+                <td>
+                    <div id="mail1"></div>
+                </td>
+            </tr>
+            <tr>
+                <td id="ele3">
+                    Server Username:
+                </td>
+                <td>
+                    <input type="text" id="username" size="15" onblur="myFunction2()">
+                </td>
+                <td>
+                    <div id="username1"></div>
+                </td>
+            </tr>
+            <tr>
+                <td id="ele4">
+                    Server Password:
+                </td>
+                <td>
+                    <input type="text" id="pass" size="15">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="ele5">
+                    Confirm Password:
+                </td>
+                <td>
+                    <input type="text" id="confirmpass" size="15" onblur="myFunction3()">
+                </td>
+                <td>
+                    <div id="confirmpass1"></div>
+                </td>
+            </tr>
+            <tr>
+                <td id="ele6">
+                    Team Lead:
+                </td>
+                <td>
+                    <!-- <input type="text" id="manager" size="15"> -->
+                    <select id="lead">
+                        <option value="Jack">Jack</option>
+                        <option value="Jim">Jim</option>
+                        <option value="Arnold">Arnold</option>
+                        <option value="Susane">Susane</option>
+                    </select>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="ele7">
+                    Team Members:
+                </td>
+                <td>
+                    <table id="ele10" height="300" width="300" border="1" cellpadding="4">
+                        <td class="boxes">
+                    <!-- <table height="300" width="300" border="4"> -->
+                        <p class="element" id="jack" ondragstart="draghandle(event)" ondrop="drop(event)">Jack</p>
+                        <p class="element" id="jim">Jim</p>
+                        <p class="element" id="arnold">Arnold</p>
+                        <p class="element" id="susane">Susane</p>
+                    <!-- </table> -->
+
+                        </td>
+                    </table>
+                </td>
+                <td>
+                    <table id="ele11" height="300" width="300" border="1" cellpadding="4">
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" id="sub" value="Submit" onclick="myFunction4()"></td>
+            </tr>
+        </table>
+    </body>
+</html>

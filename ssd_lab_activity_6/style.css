@@ -1,0 +1,7 @@
+.boxes{
+    border: 5px;
+}
+#jack, #jim, #arnold, #susane{
+    background-color: aquamarine;
+    text-align: center;
+}
